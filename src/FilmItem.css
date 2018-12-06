@@ -1,0 +1,26 @@
+.poster {
+    border: 1px solid black;
+    position: relative;
+    float: left;
+    width:  222px;
+    height: 328px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-size: 1.05em;
+    align-self: center;
+}
+
+.release {
+    font-size: .8em;
+}

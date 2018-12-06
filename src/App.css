@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./OpenSans-Regular.ttf");
+}
+
+html {
+  background-image: linear-gradient(to right, #f4d194, #edbc83, #e5a674, #dd9169, #d37b60);
+  background-size: contain;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
