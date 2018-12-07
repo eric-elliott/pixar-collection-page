@@ -36,7 +36,10 @@ class App extends Component {
       highlight1: highlight,
       highlight2: {},
       highlight3: {},
-      highlight4: {}
+      highlight4: {},
+      highlight5: highlight,
+      highlight6: {},
+      highlight7: {}
     };
     // binding functions to class
     this.allFilmsClick = this.allFilmsClick.bind(this);
@@ -67,7 +70,10 @@ class App extends Component {
     this.setState({
       movies: movies,
       mainName: "All Films",
-      image: require("./img/coco.jpg")
+      image: require("./img/coco.jpg"),
+      highlight5: highlight,
+      highlight6: {},
+      highlight7: {}
     }, () => {
       this.checkDisplay();
     });
@@ -93,7 +99,10 @@ class App extends Component {
     this.setState({
       movies: movies,
       mainName: "Feature Films",
-      image: require("./img/up-house.jpg")
+      image: require("./img/up-house.jpg"),
+      highlight5: {},
+      highlight6: highlight,
+      highlight7: {}
     }, () => {
       this.checkDisplay();
     });
@@ -120,7 +129,10 @@ class App extends Component {
     this.setState({
       movies: movies,
       mainName: "Short Films",
-      image: require("./img/piper-hero.jpg")
+      image: require("./img/piper-hero.jpg"),
+      highlight5: {},
+      highlight6: {},
+      highlight7: highlight
     }, () => {
       this.checkDisplay();
     });
@@ -248,7 +260,7 @@ class App extends Component {
 
   render() {
     return <div>
-      <Banner button1={this.allFilmsClick} button2={this.featureFilmsClick} button3={this.shortFilmsClick} button5={this.latestClick} highlight1={this.state.highlight1} button6={this.oldestClick} highlight2={this.state.highlight2} button7={this.alphabetClick} highlight3={this.state.highlight3} button8={this.alphabetRevClick} highlight4={this.state.highlight4} />
+      <Banner button1={this.allFilmsClick} highlight5={this.state.highlight5} button2={this.featureFilmsClick} highlight6={this.state.highlight6} button3={this.shortFilmsClick} highlight7={this.state.highlight7} button5={this.latestClick} highlight1={this.state.highlight1} button6={this.oldestClick} highlight2={this.state.highlight2} button7={this.alphabetClick} highlight3={this.state.highlight3} button8={this.alphabetRevClick} highlight4={this.state.highlight4} />
         <ParallaxWrapper image={this.state.image} mainName={this.state.mainName} />
         <div className="movies">{this.state.movies}</div>
         <h1 className="footer"> | | | </h1>

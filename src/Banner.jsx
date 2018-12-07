@@ -7,9 +7,9 @@ class Banner extends Component {
         return(
             <div className="banner">
             <img src= {require("./img/pixar-logo.png")} alt='' className="pixar-logo" />
-            <Button onClick={this.props.button1} bsStyle="link" className="button1">All Films</Button>
-            <Button onClick={this.props.button2} bsStyle="link" className="button1">Feature Films</Button>
-            <Button onClick={this.props.button3} bsStyle="link" className="button1">Short Films</Button>
+            <Button onClick={this.props.button1} bsStyle="link" style={this.props.highlight5} className="button1">All Films</Button>
+            <Button onClick={this.props.button2} bsStyle="link" style={this.props.highlight6} className="button1">Feature Films</Button>
+            <Button onClick={this.props.button3} bsStyle="link" style={this.props.highlight7} className="button1">Short Films</Button>
             <small className = "sort"> sort by: </small>
             <Button onClick={this.props.button5} bsStyle="link" className="button2" style={this.props.highlight1}>Latest</Button>
             <Button onClick={this.props.button6} bsStyle="link" className="button2" style={this.props.highlight2}>Oldest</Button>
